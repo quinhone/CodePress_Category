@@ -5,6 +5,7 @@ namespace CodePress\CodeCategory\Entities;
 
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model implements SluggableInterface
@@ -25,6 +26,16 @@ class Category extends Model implements SluggableInterface
 		'save_to' => 'slug',
 		'unique' => true
 	];
+
+	public function setValidator(Validator $validator)
+	{
+		$this->validator = $validator;
+	}
+
+	public function getValidator()
+	{
+		return $this->validator;
+	}
 
 	public function categorizable()
 	{

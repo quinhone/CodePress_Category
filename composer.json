@@ -2,10 +2,10 @@
     "name": "codepress/code-category",
     "require": {
         "php": ">=5.5.9",
-        "illuminate/contracts": "~5.0",
-        "illuminate/http": "~5.0",
-        "illuminate/support": "~5.0",
-        "illuminate/database": "~5.0",
+        "illuminate/contracts": "~5.2",
+        "illuminate/http": "~5.2",
+        "illuminate/support": "~5.2",
+        "illuminate/database": "~5.2",
         "cviebrock/eloquent-sluggable": "^3.0"
     },
     "require-dev": {
